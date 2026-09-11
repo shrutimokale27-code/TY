@@ -1,0 +1,20 @@
+name: Push Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome Message
+        run: echo "Code pushed to main branch"
+
+      - name: Date and Time
+        run: date
+
+      - name: Working Directory
+        run: pwd
